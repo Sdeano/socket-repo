@@ -1,0 +1,19 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="http://178.62.3.248:3000/socket.io/socket.io.js"></script>
+
+<script>
+    var socket =  io.connect("http://178.62.3.248:3000");
+
+    socket.onopen = function (event) {
+        exampleSocket.send("new message");
+    };
+
+</script>
+
+</body>
+</html>
